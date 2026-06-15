@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patna Home Tuition</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+}
+
+header{
+    background:#0066cc;
+    color:white;
+    padding:20px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+    background:linear-gradient(to right,#0066cc,#00aaff);
+    color:white;
+}
+
+.hero h1{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.btn{
+    background:white;
+    color:#0066cc;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.section{
+    padding:60px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.card h3{
+    color:#0066cc;
+    margin-bottom:10px;
+}
+
+.form-container{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+input,select,textarea{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    background:#0066cc;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<div class="logo">Patna Home Tuition</div>
+<div>Quality Tutors at Your Doorstep</div>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Find the Best Home Tutor in Patna</h1>
+<p>Experienced Tutors for Class 1-12, JEE, NEET, SSC & More</p>
+<a href="#enquiry" class="btn">Enquire Now</a>
+</section>
+
+<section class="section">
+<h2 style="text-align:center;margin-bottom:30px;">Subjects We Offer</h2>
+
+<div class="cards">
+<div class="card">
+<h3>School Tuition</h3>
+<p>Class 1 to 12 CBSE, ICSE & Bihar Board.</p>
+</div>
+
+<div class="card">
+<h3>JEE Preparation</h3>
+<p>Physics, Chemistry & Mathematics by experts.</p>
+</div>
+
+<div class="card">
+<h3>NEET Coaching</h3>
+<p>Biology, Physics & Chemistry home tuition.</p>
+</div>
+
+<div class="card">
+<h3>Competitive Exams</h3>
+<p>SSC, Banking, Railway and Government Exams.</p>
+</div>
+</div>
+</section>
+
+<section class="section">
+<h2 style="text-align:center;margin-bottom:30px;">Why Choose Us?</h2>
+
+<div class="cards">
+<div class="card">
+<h3>Verified Tutors</h3>
+<p>Background checked and experienced teachers.</p>
+</div>
+
+<div class="card">
+<h3>Personalized Learning</h3>
+<p>Customized study plans for every student.</p>
+</div>
+
+<div class="card">
+<h3>Affordable Fees</h3>
+<p>Best tuition services at reasonable rates.</p>
+</div>
+</div>
+</section>
+
+<section class="section" id="enquiry">
+<h2 style="text-align:center;margin-bottom:30px;">Parent Enquiry Form</h2>
+
+<div class="form-container">
+<form onsubmit="submitForm(event)">
+<input type="text" placeholder="Parent Name" required>
+
+<input type="tel" placeholder="Mobile Number" required>
+
+<input type="text" placeholder="Location in Patna" required>
+
+<select required>
+<option value="">Select Class</option>
+<option>Class 1-5</option>
+<option>Class 6-8</option>
+<option>Class 9-10</option>
+<option>Class 11-12</option>
+<option>JEE</option>
+<option>NEET</option>
+<option>Competitive Exams</option>
+</select>
+
+<input type="text" placeholder="Subject Required">
+
+<textarea rows="4" placeholder="Additional Requirements"></textarea>
+
+<button type="submit">Submit Enquiry</button>
+</form>
+</div>
+</section>
+
+<footer>
+<h3>Patna Home Tuition</h3>
+<p>📞 +91 9876543210</p>
+<p>📧 info@patnahometuition.com</p>
+<p>© 2026 All Rights Reserved</p>
+</footer>
+
+<script>
+function submitForm(e){
+e.preventDefault();
+alert("Thank you! Your enquiry has been submitted. Our team will contact you soon.");
+}
+</script>
+
+</body>
+</html>
